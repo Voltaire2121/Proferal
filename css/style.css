@@ -236,7 +236,7 @@ header.green .border-btn-small:hover {background: #fff;color: #60ba62;}
 /*======================= # Homepage type 2 =========================*/
 a.btn:focus {color: #fff;text-decoration: none;}
 .home-banner2.home-banner #owl-demo .owl-item:nth-child(2) .banner-text p {font-size: 17px;line-height: 30px;color: #575757;}
-.home-banner2.home-banner #owl-demo .owl-item:nth-child(2) .banner-text {width: 410px;right: 8%;top: 10%;}
+.home-banner2.home-banner #owl-demo .owl-item:nth-child(2) .banner-text {width: 410px;right: 8%;top: 30%;}
 .home-banner2.home-banner #owl-demo .owl-item:nth-child(2) .banner-text h1 {margin-bottom: 10px; }
 .home-banner2.home-banner #owl-demo .owl-item:nth-child(2) a.btn {font-size: 18px;padding: 13px 11%;}
 .home-banner2.home-banner #owl-demo .owl-item:nth-child(3) .banner-text{width: 63%;margin: auto;left: 0;right: 0; top: 8%; display: flex; justify-content: center; align-items: center; flex-direction: column;}
@@ -1175,6 +1175,12 @@ header.green {background: #60ba62;}
   .about-us-block article {-webkit-column-count: 2; -moz-column-count: 2;column-count: 2;}
   /** remove if you don't want parallax effect on header, banner, main content and footer **/
   .collapse{display: block;}
+  .img-proferal{
+  position: absolute;
+  width: 500px;
+  left: 10%;
+  top: 40px;
+}
 
   .menu-pop-up .modal-dialog, .video-pop-up.modal-dialog { width: 700px; margin: 30px auto;}
   .video-pop-up.modal-dialog { width: 800px;}
@@ -1450,6 +1456,15 @@ header.green {background: #60ba62;}
 }
 
 @media (max-width: 768px){
+  .carousel-feature.feature-slide.active {
+    width: 70% !important;
+    left: 15% !important;
+    height: auto !important;
+  }
+  .carousel-feature.feature-slide.active img{
+    width: 100% !important;
+    height: auto !important;
+  }
   .menu-block .container-fluid, .navbar-collapse { padding-right: 15px;}
   .footer-logo, .download-popup .download-app-text, .big-image figure img, .banner-text .popular-tags, .carousel-container, .top-description>p, .food-image, .pricing-banner .banner-text, .comment-form p.comment-form-author, .comment-form p.comment-form-email, .artilce-info>span, .article-info .article-tags, .social-share>span, .social-share ul, .comment-body figure img, .top.admin figure img, .blog-left-content-full .comment-form p.comment-form-author, .blog-left-content-full .comment-form p.comment-form-email, .blog-left-content-full blockquote, .right-form-block, select.select-program, .download-app-block .left-mobile, .download-app-block .download-app-text, .download-from a img, .testimonials-block .testimonials, .blog-admin, .logo-only-header .logo-block, .select-payment-btns .select-payment-btn, .payment-form form fieldset:last-of-type input[type=submit], .img-text-center p, .testimonial-box-wrap, .blog-single-wrap figure img {width: 100%;}
   .about-us-banner.banner-image, .small-image-wrap figure, .big-image figure, .blog-image, .menu-item-wrap figure, .menu-single-banner, .single-program-banner {height: auto;}
@@ -1512,7 +1527,7 @@ header.green {background: #60ba62;}
   .collapse {transition: none;}
   .navbar-toggle{z-index:1000;}
   .navbar-toggle .icon-bar {width: 15px;height: 1px;border-radius: 0;}
-  .navbar-default .navbar-toggle {border-color: #60ba62;border-radius: 0;padding: 6px;background: transparent;margin: 0 15px 0;}
+  .navbar-default .navbar-toggle {border-color: #E4291C;border-radius: 0;padding: 6px;background: transparent;margin: 0 15px 0;}
   .parallax-block-text h2 {font-size: 18px;margin-bottom: 10px;}
   .parallax-block { height: 250px;background-size: cover;}
   .subscribe-form input {padding: 10px;font-size: 11px;}
@@ -1530,13 +1545,13 @@ header.green {background: #60ba62;}
   .banner img {top: -1px;}
   .banner-text {top: 20%;background: rgba(255,255,255,0.7);padding: 10px;}
   .footer-social-links {width: 100%;float: left;border-top: 1px solid #ededed;padding-top: 17px;}
-  .nav-right-btn {background: #60ba62;width: 100%;float: left;padding: 15px;margin-top: 0}
+  .nav-right-btn {background: #E4291C;width: 100%;float: left;padding: 15px;margin-top: 0}
   .nav-right-btn .btn {border-color: #fff;color: #fff;}
-  .nav-right-btn .btn:hover {background: #fff;color: #60ba62;}
+  .nav-right-btn .btn:hover {background: #fff;color: #E4291C;}
   .navbar-default .navbar-nav>li {padding: 0;text-align: left;width: 100%;float: left;}
   .navbar-default .navbar-nav>li>a {padding: 5px 10px;}
   .navbar-default .navbar-nav>li>a:after {content: none;}
-  .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li.active>a, .navbar-default .navbar-nav>li.current-menu-item>a{color: #fff;background: #60ba62;}
+  .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li.active>a, .navbar-default .navbar-nav>li.current-menu-item>a{color: #fff;background: #E4291C;}
   .media-partner {padding: 20px 0 0;}
   .partner-item, .right-form-block fieldset, .video-text a, .review-info, .pricing-block .top-text-header {margin-bottom: 15px;}
   .btn, input[type=submit], button {padding: 5px 22px;}
@@ -1589,12 +1604,23 @@ header.green {background: #60ba62;}
   .comment-body figure {margin: 20px 15px 0 0;}
   article.comment-body, .review-info .title span:first-child {margin-bottom: 5px;}
   .blog-left-content-full blockquote {padding-left: 8.5%;}
+  .home-banner2.home-banner #owl-demo .owl-item:first-child .banner-text{top:10%}
+    .home-banner2.home-banner #owl-demo .owl-item:nth-child(2) .banner-text{top:10%; width: 80%; left: 20%; display: flex; align-items: center;}
+    .home-banner2.home-banner #owl-demo .owl-item:nth-child(3) .banner-text{top:0%; width: 80%;}
+.home-banner2.home-banner #owl-demo .owl-item:nth-child(3) .banner-text h1{line-height: 1.2;}
+
   .comment-form-comment textarea {height: 130px;}
   .parallax-block-text {top: 26%;background: rgba(255,255,255,.5);padding: 10px 0 15px;}
   .menu-item-wrap h4 a {font-family: "Montserrat", sans-serif;}
   .home-banner .banner-text h1 {margin-bottom: 3px;}
   .home-banner .banner-text h1 {font-size: 20px;line-height: 25px;}
-  .home-banner .banner-text {width: 100%;padding: 15px 15px 20px;left: 0;}
+  .home-banner .banner-text {width: 100%;padding: 15px 15px 20px;left: 0; height: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        justify-content: center;}
+        .home-banner2.home-banner #owl-demo a.btn{width: 150px; height: 40px; display: flex; align-items: center; margin-top: 10px; justify-content: center; font-size: 13px !important;}
+        .home-banner2.home-banner #owl-demo #ver-mas{width: 150px; height: 40px; display: flex; align-items: center; margin-top: 10px; justify-content: center; z-index: 10; font-size: 13px;}
   .home-banner .banner-text p {font-size: 12px;line-height: 21px;margin-bottom: 10px;}
   .home-banner a.btn {font-size: 13px;padding: 5px 6.5%;}
   .home-banner {height: auto;}
@@ -1603,13 +1629,13 @@ header.green {background: #60ba62;}
   .home-banner .banner-text {top: initial;bottom: 0;z-index: 1;}
   .block.select-program-block, .testimonials-block {background-size: cover;}
   .home-banner .bannerwrap figure:before {position: absolute;content: "";width: 100%;height: 100%;background: rgba(0,0,0,.1);z-index: 1;}
-  .right-form-block h3 {font-size: 19px;line-height: 28px;margin-bottom: 10px;}
+  .right-form-block h3 {font-size: 19px;line-height: 28px;margin-bottom: 10px; text-align: center;}
   .right-form-block select {height: 40px;padding: 10px 10px 10px 48px;background-position: 96% 53%;font-size: 15px;background-size: 13px;}
   .select.weight-loss {background: url(../images/meter-icon.png) no-repeat 12px;background-size: 21px;}
   .select.healthy-lifestyle {background: url(../images/heart-icon.png) no-repeat 12px;background-size: 23px;}
   .select.specialty-menus {background: url(../images/menu-icon.png) no-repeat 12px;background-size: 25px;}
-  .right-form-block input.btn {padding: 10px;font-size: 15px;}
-  .right-form-block {padding: 30px 15px 10px;}
+  .right-form-block input.btn {padding: 10px;font-size: 15px; width: 50%; margin-left: 25%; border-radius: 10px;}
+  .right-form-block {padding: 30px 24px 20px;}
   .download-app-text h1 {font-size: 20px;line-height: 28px;margin-bottom: 10px;}
   .download-app-wrap {font-size: 14px;line-height: 24px;padding-left: 0;margin-top: 0;}
   .download-from a {width: 48%;display: block;float: left;}
@@ -1685,7 +1711,7 @@ header.green {background: #60ba62;}
   .full-width-video {height: 300px;}
   img.video-bg {width: 150%;}
   .carousel-feature .carousel-caption p {line-height: 18px;font-size: 13px;}
-  #carousel {height: 255px;margin-bottom: 20px;}
+  #carousel {height: auto;margin-bottom: 20px;}
   #carousel-left img, #carousel-right img {width: 10px;}
   #carousel-left, #carousel-right {bottom: 10px;}
   .block.pricing-block {padding-top: 50px;}
@@ -1697,6 +1723,16 @@ header.green {background: #60ba62;}
   .btn-tags-big {font-size: 10px;padding: 3px 16px;}
   .blog-banner-main figure img {width: 135%;}
   .left-mobile figure {float: none;text-align: center;}
+  .img-viviana{
+    width: 35% !important;
+    margin-top: 46px;
+  }
+  .img-proferal{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 40px;
+  }
 
   .btn.border-btn-small.cart-btn { margin:0 0 10px; padding:5px 10px;  display: block; width: 100%;}
 
@@ -1785,6 +1821,12 @@ header.green {background: #60ba62;}
   .shop_table td.product-subtotal:before{ top:-4px; }
   .shop_table td.product-price:before{ top:-3px; }
   .video-pop-up .video-wrap .video-text { top: 40%;}
+    .featured-menu-carousel{height: 470px;}
+
+  .carousel-container .carousel-top #carousel-left{height: 20px; left: 15px; display: inline; bottom: 0px; display: flex;}
+  .carousel-container .carousel-top #carousel-right{height: 20px; right: 15px; display: inline; bottom: 0px; display: flex;}
+  .carousel-container #carousel-left, .carousel-container #carousel-right{display: none;}
+
 }
 
 
@@ -1795,6 +1837,8 @@ header.green {background: #60ba62;}
   .try-block h3 { margin-right: 20px;}
   .accordion .link{ padding-right: 40px; font-size: 14px; }
   .accordion li { margin-bottom: 10px;}
+  .featured-menu-carousel{height: 370px;}
+
 }
 
 
@@ -1811,6 +1855,7 @@ header.green {background: #60ba62;}
   #carousel-left img, #carousel-right img {width: 7px;}
   #carousel-left, #carousel-right {bottom: 20px;}
   .blog-banner-main figure img {width: 210%;}
+
 
   .menu-item-wrap .mid { width: 100%; padding: 5%;}
 }
@@ -1875,9 +1920,3 @@ header.green {background: #60ba62;}
   z-index: 10;
 }
 
-.img-proferal{
-  position: absolute;
-  width: 500px;
-  left: 10%;
-  top: 40px;
-}
